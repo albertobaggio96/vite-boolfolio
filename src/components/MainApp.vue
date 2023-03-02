@@ -1,8 +1,13 @@
 <script>
   import axios from 'axios';
 
+  import ProjectCard from './ProjectCard.vue'
+
   export default{
     name: 'mainApp',
+    components:{
+      ProjectCard,
+    },
     data() {
       return {
         projectsUrl: 'http://127.0.0.1:8000/api/projects',
@@ -31,9 +36,11 @@
 </script>
 
 <template>
-  
+
   <div v-for="project in projects">
-    {{ project.title }}
+    <ProjectCard 
+      :project="project"
+    />
   </div>
 
 </template>
