@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'ProjectCard',
   props:[
     'project'
   ]
@@ -16,11 +17,11 @@ export default {
     <p class="card-title">Author: {{ project.author }}</p>
     <p class="card-text">Date: {{ project.date }}</p>
     <p class="card-text">Type: {{ project?.type?.type ?? 'unknown' }}</p>
-    <p class="card-text">Technologies: 
+    <p class="card-text">Technologies: {{ project.slug }}
       <span v-if="project.technologies.length > 0" v-for="technology in project.technologies">{{ technology.technology + ' '}}</span>
       <span v-else>unknown</span>
     </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <router-link :project="'ciao'" :to="{ name: 'project', params: { slug: project.slug }} ">Show</router-link>
   </div>
 </template>
 

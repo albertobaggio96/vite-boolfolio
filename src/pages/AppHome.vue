@@ -1,15 +1,15 @@
+<template>
+  <h1>ciao</h1>
+</template>
+
 <script>
 export default {
+  name: 'AppHome',
   
 }
 </script>
 
-<template lang="">
-  <div>
-    
-  </div>
-</template>
 
-<style lang="">
+<style lang="scss">
   
 </style>

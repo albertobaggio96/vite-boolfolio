@@ -1,9 +1,3 @@
-<script>
-  export default {
-      
-  }
-</script>
-
 <template>
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
@@ -32,6 +26,12 @@
     </nav>
   </header>
 </template>
+
+<script>
+  export default {
+      
+  }
+</script>
 
 <style lang="scss">
   

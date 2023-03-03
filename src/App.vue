@@ -3,7 +3,7 @@
   // import MainApp from './components/MainApp.vue';
 
   export default{
-    name:app,
+    name:'App',
     components:{
       HeaderApp,
       // MainApp,
