@@ -24,7 +24,7 @@ export default {
       projectsUrl: `http://127.0.0.1:8000/api/projects`,
       project: '',
       slug: this.$route.params.slug
-      
+
     }
   },
   methods: {
